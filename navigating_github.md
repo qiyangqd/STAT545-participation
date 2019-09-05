@@ -14,6 +14,6 @@ Here is the URL to my account:
 
 https://github.com/qiyangqd
 
-Here is the URL to the Assignment 01 last year:
+Here is the URL to the Assignment 01 last year (eue by 23:59 Tuesday 2018-09-18)
 
 https://github.com/STAT545-UBC/Classroom/blob/48295d0291ee918e86b9f44487eb0e5c063104c0/assignments/hw01/hw01.md
