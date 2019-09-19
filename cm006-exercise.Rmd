@@ -113,7 +113,7 @@ Now using with pipes:
 
 ```{r}
 # alter the below to include 2 "pipes"
-gapminder %>%
+gapminder %>% 
   select(year, lifeExp, country) %>%
   arrange(year, lifeExp)
 
