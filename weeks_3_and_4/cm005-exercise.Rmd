@@ -26,7 +26,7 @@ suppressPackageStartupMessages(library(tsibble))
 knitr::opts_chunk$set(fig.align = "center")
 ```
 
-<!---The following chunk allows errors when knitting--->
+<!---The chunk allows errors when knitting--->
 
 ```{r allow errors, echo = FALSE}
 knitr::opts_chunk$set(error = TRUE)
@@ -119,7 +119,9 @@ What's wrong with the following code? Fix it.
 
 ```{r, fig.width = 5, fig.height = 2}
 ggplot(gapminder) +
-  geom_point(aes(x = gdpPercap, y = lifeExp), alpha = 0.1)
+  geom_point(aes(x= gdpPercap, y = lifeExp), alpha = 0.1) +
+  scale_x_log10("GDP per capita", labels = scales::dollar_format()) + 
+  labs(y = "Life expectancy")
 ```
 
 
