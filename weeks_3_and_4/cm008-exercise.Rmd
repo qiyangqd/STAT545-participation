@@ -211,3 +211,17 @@ __Exercise 4__: Make a plot of `year` (x) vs `lifeExp` (y), facetted by continen
 __Exercise 5__: Plot the population over time (year) using lines, so that each country has its own line. Colour by `gdpPercap`. Add alpha transparency to your liking. 
 
 __Exercise 6__: Add points to the plot in Exercise 5.
+```{r}
+gapminder %>% 
+  filter(continent == "Americas") %>% 
+  ggplot(aes(lifeExp, country)) + 
+  ggridges::geom_density_ridges()
+geom_rug()
+gapminder %>% 
+  filter(continent == "Americas") %>% 
+  mutate(country = fct_reorder(country, lifeExp, median)) %>% 
+  ggplot(aes(lifeExp, country)) +  
+  ggridges::geom_density_ridges()
+
+```
+

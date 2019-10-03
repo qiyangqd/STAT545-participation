@@ -118,9 +118,14 @@ email %>%
 
 ```{r}
 n <- 100
-FILL_THIS_IN(label = FILL_THIS_IN,
-             FILL_THIS_IN = rnorm(n),
-             FILL_THIS_IN)
+tibble(label = "Sample A",
+             x = rnorm(n),
+             y = x + rnorm(n))
+
+n <- 100
+tibble(label = "Sample A",
+             x = rnorm(n),
+             y = rnorm(n) + x) # why different
 ```
 
 
@@ -136,7 +141,8 @@ FILL_THIS_IN(mu = mu, sd = sd) %>%
   FILL_THIS_IN
 ```
 
-3. Fix the `experiment` tibble below (originally defined in the documentation of the `tidyr::expand()` function) so that all three repeats are displayed for each person, and the measurements are kept. The code is given, but needs one adjustment. What is it?
+3. Fix the `experiment` tibble below (originally defined in the documentation of the `tidyr::expand()` function) so that all three repeats are displayed for each person, and the measurements are kept. The code is given, but needs one adjustment. What is it? 
+# not the same as what is covered in class
 
 ```{r}
 experiment <- tibble(
@@ -146,7 +152,7 @@ experiment <- tibble(
   measurement_1 = runif(6),
   measurement_2 = runif(6)
 )
-experiment %>% expand(name, trt, rep)
+experiment %>% complete(nesting(name, trt, rep))
 ```
 
 
