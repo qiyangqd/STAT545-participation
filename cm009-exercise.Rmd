@@ -33,18 +33,18 @@ lotr
 
 ```{r}
 (lotr_wide <- lotr %>% 
-  pivot_wider(id_cols = c(-Race, -Words), 
-              names_from = Race, 
-              values_from = Words))
+  pivot_wider(id_col = c(-Race, -Words),  # columns that you want to keep
+              names_from = Race,  # names of new columns that your want to create
+              values_from = Words)) # values of new columns that you want to create
 ```
 
 3. Re-lengthen the wide LOTR data from Question 2 above.
 
 ```{r}
 lotr_wide %>% 
-  pivot_longer(cols  = c(-Film, -Gender), 
-               names_to  = "Race", 
-               values_to = "Words")
+  pivot_longer(cols = c(-Film, -Gender), # columns you want to condense in to one
+               names_to  = "Race", # what's the name of the new column
+               values_to = "Words") # where will values of old columns go 
 ```
 
 ## Exercise 2: Multivariate Pivoting
@@ -125,7 +125,7 @@ tibble(label = "Sample A",
 n <- 100
 tibble(label = "Sample A",
              x = rnorm(n),
-             y = rnorm(n) + x) # why different
+             y = rnorm(n) + x) # why different   
 ```
 
 
