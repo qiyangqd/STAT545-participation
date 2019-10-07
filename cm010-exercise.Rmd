@@ -50,10 +50,11 @@ The package `singer` comes with two smallish data frames about songs. Let's take
 
 ```{r}
 time %>% 
-  semi_join(album, by = c("song", "artist_name"))
+  semi_join(album, by = c("song", "artist_name")) # drop other columns: "filter"
+                # use both "song" and "artist_name", which appear in both time and album datasets
 
 time %>% 
-  inner_join(album, by = c("song", "artist_name"))
+  inner_join(album, by = c("song", "artist_name")) # keep other columns: "mutate"
 ```
 
 2. Go ahead and add the corresponding albums to the `time` tibble, being sure to preserve rows even if album info is not readily available.
@@ -61,14 +62,14 @@ time %>%
 ```{r}
 time %>% 
   left_join(album, by = c("song", "artist_name")) %>% 
- # select(city)
+  select("song", "artist_name", "year","album")
 ```
 
 3. Which songs do we have "year", but not album info?
 
 ```{r}
 time %>% 
-  semi_join(album, by = "song")
+  semi_join(album, by = "song") # I think here should be anti_join
 ```
 
 4. Which artists are in `time`, but not in `album`?
@@ -131,14 +132,14 @@ Let's use three set functions: `intersect`, `union` and `setdiff`. We'll work wi
 1. Rows that appear in both `y` and `z`
 
 ```{r}
-intersect(y, z)
+intersect(y, z) # both two lines can work
 inner_join(y, z)
 ```
 
 2. You collected the data in `y` on Day 1, and `z` in Day 2. Make a data set to reflect that.
 
 ```{r}
-bind_rows( # union could also do
+bind_rows( # `union` could also do
   mutate(y, day = "Day 1"),
   mutate(z, day = "Day 2")
 )
