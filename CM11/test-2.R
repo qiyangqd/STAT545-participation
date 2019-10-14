@@ -20,7 +20,6 @@ set_here("")
 
 library(tidyverse)
 library(here)
-ls()
 
 # read excel file
 data_url <- "http://gattonweb.uky.edu/sheather/book/docs/datasets/GreatestGivers.xls"
