@@ -183,7 +183,7 @@ Section 9.6 of Jenny Bryan's [notes](https://stat545.com/factors-boss.html#reord
 ##  order from high to low according to the other variable
 gapminder %>%
   ggplot() +
-  geom_bar(aes(fct_reorder(continent, lifeExp, max))) +
+  geom_bar(aes(fct_reorder(continent, lifeExp,max))) +
   coord_flip()+
   theme_bw() +
   ylab("Number of entries") + xlab("Continent")
@@ -199,6 +199,13 @@ ggplot(h_gap, aes(x = year, y = lifeExp,
   geom_line() +
   labs(color = "country")
 ```
+```{r}
+ggplot(h_gap, aes(x = year, y = lifeExp,
+                  color = country)) +
+  geom_line() +
+  labs(color = "country")
+```
+
 
 ## Change order of the levels manually
 
