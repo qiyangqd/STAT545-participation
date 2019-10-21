@@ -6,7 +6,7 @@
 * This is my participation repository for the course **STAT 545A** at UBC. It is used to store the files I worked on during class meetings. We had 14 class meetings, and files for each class are put in corresponding folders. For instance, files made in **Class Meeting 01** are put in **CM01**. The content can be found below.
 
 ## Content
-Below are the quick links to the output files of each class meeting (mainly in **.html** and **.R format**). If you want to know more about my participation, please open the folder you are interested in to find a brief introduction and some other files like **.rmd**.
+Below are the quick links to the **.html** output of each class meeting mainly. If you want to know more about my participation, please open the folder you are interested in to find a brief introduction and some other files like **.rmd**.
 
 1. CM01: Introduction to STAT 545 and GitHub
 
