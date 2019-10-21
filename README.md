@@ -1,4 +1,4 @@
-# Participation Repository for STAT 545A:bookmark: 
+# Participation Repository for STAT 545A :bookmark: 
 
 ## What is this?
 * Hi! My name is **Qi Yang**, a first-year PhD student in Oceanography at University of British Columbia (UBC). I focus on **marine viruses** and their ecological roles in the oceans. I have just started learning **R** and will use this tool in my study.
@@ -17,21 +17,24 @@ Below are the quick links to the output files of each class meeting (mainly in *
 4. CM04: Meeting 4 The version control workflow
 + nothing is required for submisison.
 5. CM05: Meeting 5 Intro to plotting with ggplot2, Part I
-
++ [View output here](https://qiyangqd.github.io/STAT545-participation/CM05/cm005-exercise.html)
 6. CM06: Meeting 6 Intro to data wrangling, Part I
-
++ [View output here](https://qiyangqd.github.io/STAT545-participation/CM06/cm006-exercise.html)
 7. CM07: Meeting 7 Intro to data wrangling, Part II
-
++ [View output here](https://qiyangqd.github.io/STAT545-participation/CM07/cm007-exercise.html)
 8. CM08: Meeting 8 Intro to plotting with ggplot2, Part II
-
++ [View output here](https://qiyangqd.github.io/STAT545-participation/CM08/cm008-exercise.html)
 9. CM09: Meeting 9 Tidy Data and Pivoting
-
++ [View output here](https://qiyangqd.github.io/STAT545-participation/CM09/cm009-exercise.html)
 10. CM10: Meeting 10 Tibble Joins
-
++ [View output here](https://qiyangqd.github.io/STAT545-participation/CM10/cm010-exercise.html)
 11. CM11: Meeting 11 File input/output (I/O)
 
 12. CM12: Meeting 12 Working with factors in R
-
++ [View output here](https://qiyangqd.github.io/STAT545-participation/CM12/cm012-exercise.html)
 13. CM13: Meeting 13 Effective Visualizations
-
++ [View output here](https://qiyangqd.github.io/STAT545-participation/CM13/cm013-exercise.html)
 14. CM14: Meeting 14 The Model-Fitting Paradigm in R
++ [View output here](https://qiyangqd.github.io/STAT545-participation/CM14/cm014-exercise.html)
+
+## Thank you for viewing my participation repo! :satisfied:
