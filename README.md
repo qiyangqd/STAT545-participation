@@ -6,14 +6,14 @@
 * This is my participation repository for the course **STAT 545A** at UBC. It is used to store the files I worked on during class meetings. We had 14 class meetings, and files for each class are put in corresponding folders. For instance, files made in **Class Meeting 01** are put in **CM01**. The content can be found below.
 
 ## Content
-Below are the quick links to the **.html** or **.R script** output of each class meeting mainly. If you want to know more about my participation, please open the folder you are interested in to find a brief introduction and some other files like **.rmd**.
+Below are the quick links to the **.html** or **.R script** output of each class meeting mainly. If you want to know more about my participation, please open the folder you are interested in to find some other files like **.rmd** or **.pdf**.
 
 1. [CM01: Introduction to STAT 545 and GitHub](https://github.com/qiyangqd/STAT545-participation/blob/master/CM01/navigating_github.md)
 
 2. [CM02:  Meeting 2 Introduction to R](https://qiyangqd.github.io/STAT545-participation/CM02/cm002-r_exploration.R)
 
 3. CM03:  Meeting 3 Authoring
-    + There are a couple of files required in this class meeting, so I didn't put a link to a specific file. But you can go to [CM03](https://github.com/qiyangqd/STAT545-participation/tree/master/CM03) directly for more information.
+    + There are a couple of files required in this class meeting, so I didn't put a link to a specific file. Please go to [CM03](https://github.com/qiyangqd/STAT545-participation/tree/master/CM03) directly for more information.
 
 4. CM04: Meeting 4 The version control workflow
     + nothing is required for submisison.
@@ -38,4 +38,7 @@ Below are the quick links to the **.html** or **.R script** output of each class
 
 14. [CM14: Meeting 14 The Model-Fitting Paradigm in R](https://qiyangqd.github.io/STAT545-participation/CM14/cm014-exercise.html)
 
-Thank you for viewing my participation repo! :satisfied:
+15. images
+    + Storage of figures for README in Homework. This can be ignored.
+    
+* Thank you for viewing my participation repo! :satisfied:
