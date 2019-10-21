@@ -3,8 +3,6 @@ title: "rmd_exploration"
 author: "Qi Yang"
 date: '2019-09-10'
 output:
-  pdf_document:
-    toc: yes
   html_document:
     keep_md: yes
     number_sections: yes
@@ -27,17 +25,13 @@ gapminder
 
 ## Try DT and tibble:
 ```{r}
-DT::datatable(mtcars)
-```
-```{r}
 tibble::as_tibble(mtcars)
 ```
+
 ```{r}
-nrow(mtcars)
+DT::datatable(mtcars)
 ```
 
+## In-line code chunk
+The number of rows in `mtcars` is `r nrow(mtcars)`.
 
-## Put mtcars in a tibble, and wrap in datatable:
-```{r}
-datatable(as_tibble(mtcars))
-```

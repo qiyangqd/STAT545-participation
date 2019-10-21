@@ -13,7 +13,7 @@ Below are the quick links to the **.html** or **.R script** output of each class
 2. [CM02:  Meeting 2 Introduction to R](https://qiyangqd.github.io/STAT545-participation/CM02/cm002-r_exploration.R)
 
 3. [CM03:  Meeting 3 Authoring]
-+ There are a couple of files required in this class meeting, so there is no link to a specific file. Please open the folder *CM13* directly for information.
++ There are a couple of files required in this class meeting, so I didn't put a link to a specific file. But you can go to [CM03](https://qiyangqd.github.io/STAT545-participation/CM03) directly for more information.
 
 4. CM04: Meeting 4 The version control workflow
 + nothing is required for submisison.
