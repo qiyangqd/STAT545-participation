@@ -15,7 +15,7 @@ read.csv('./gapminder_sum.csv')
 # platform agnostic, dir-structure agnostic
 write.csv(here::here("./gapminder_sum.csv"))
 
-# we can also
+# we can also set root with here
 set_here("")
 
 library(tidyverse)

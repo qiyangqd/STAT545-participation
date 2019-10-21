@@ -1,9 +1,10 @@
-# Participation 10 :bookmark: 
+# Participation 11 :bookmark: 
 
-Hi! Welcome to Qi Yang's Participation 10 of the course STAT 545A. :smile:
+Hi! Welcome to Qi Yang's Participation 11 of the course STAT 545A. :smile:
 
-Here are two files in this folder:
-1. **.html** file which is the final output. You can access it by clicking [here](https://qiyangqd.github.io/STAT545-participation/CM10/cm010-exercise.html). 
-2. **.rmd** file which contains the raw codes. 
+There is 1 **.R** script and 2 folders in this folder:
+1. **cm011.R**: What I did following Lesson 11 in Guide after class.
+2. Folder **Before_tutorial**: This folder contains what I did in class before the tutorial updated. It contains **gapminder_test.R** and **test.R**, the R scripts we created during class.
+3. Folder **data**: Created during running **cm**.R.
 
-Thanks for viewing my Participation 10!
+Thanks for viewing my Participation 11!

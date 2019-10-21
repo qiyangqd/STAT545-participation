@@ -1,14 +1,16 @@
 ---
 title: "rmd_exploration"
 author: "Qi Yang"
-date: "2019-09-10"
-output: 
+date: '2019-09-10'
+output:
+  pdf_document:
+    toc: yes
   html_document:
-    keep_md: true
-    toc: true
-    toc_float: true
-    number_sections: true
+    keep_md: yes
+    number_sections: yes
     theme: cerulean
+    toc: yes
+    toc_float: yes
 ---
 
 <!-- echo = FALSE hides codes from output, warning = FALSE hides warning messages -->

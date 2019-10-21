@@ -6,13 +6,14 @@
 * This is my participation repository for the course **STAT 545A** at UBC. It is used to store the files I worked on during class meetings. We had 14 class meetings, and files for each class are put in corresponding folders. For instance, files made in **Class Meeting 01** are put in **CM01**. The content can be found below.
 
 ## Content
-Below are the quick links to the **.html** output of each class meeting mainly. If you want to know more about my participation, please open the folder you are interested in to find a brief introduction and some other files like **.rmd**.
+Below are the quick links to the **.html** or **.R script** output of each class meeting mainly. If you want to know more about my participation, please open the folder you are interested in to find a brief introduction and some other files like **.rmd**.
 
-1. CM01: Introduction to STAT 545 and GitHub
+1. [CM01: Introduction to STAT 545 and GitHub](https://qiyangqd.github.io/STAT545-participation/CM01/navigating_github.md)
 
-2. CM02:  Meeting 2 Introduction to R
+2. [CM02:  Meeting 2 Introduction to R](https://qiyangqd.github.io/STAT545-participation/CM02/cm002-r_exploration.R)
 
-3. CM03:  Meeting 3 Authoring
+3. [CM03:  Meeting 3 Authoring]
++ There are a couple of files required in this class meeting, so there is no link to a specific file. Please open the folder *CM13* directly for information.
 
 4. CM04: Meeting 4 The version control workflow
 + nothing is required for submisison.
@@ -26,7 +27,7 @@ Below are the quick links to the **.html** output of each class meeting mainly. 
 
 10. [CM10: Meeting 10 Tibble Joins](https://qiyangqd.github.io/STAT545-participation/CM10/cm010-exercise.html)
 
-11. [CM11: Meeting 11 File input/output (I/O)]
+11. [CM11: Meeting 11 File input/output (I/O)](https://qiyangqd.github.io/STAT545-participation/CM11/cm011.R)
 
 12. [CM12: Meeting 12 Working with factors in R](https://qiyangqd.github.io/STAT545-participation/CM12/cm012-exercise.html)
 

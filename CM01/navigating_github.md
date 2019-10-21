@@ -1,3 +1,10 @@
+---
+output:
+  pdf_document: default
+  html_document: default
+---
+
+
 Helpful links
 
 Here is the URL to the STAT 545 home page repo:
