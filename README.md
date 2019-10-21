@@ -8,17 +8,20 @@
 ## Content
 Below are the quick links to the **.html** or **.R script** output of each class meeting mainly. If you want to know more about my participation, please open the folder you are interested in to find a brief introduction and some other files like **.rmd**.
 
-1. [CM01: Introduction to STAT 545 and GitHub](https://qiyangqd.github.io/STAT545-participation/CM01/navigating_github.md)
+1. [CM01: Introduction to STAT 545 and GitHub](https://github.com/qiyangqd/STAT545-participation/blob/master/CM01/navigating_github.md)
 
 2. [CM02:  Meeting 2 Introduction to R](https://qiyangqd.github.io/STAT545-participation/CM02/cm002-r_exploration.R)
 
-3. [CM03:  Meeting 3 Authoring]
-+ There are a couple of files required in this class meeting, so I didn't put a link to a specific file. But you can go to [CM03](https://qiyangqd.github.io/STAT545-participation/CM03) directly for more information.
+3. CM03:  Meeting 3 Authoring
+    + There are a couple of files required in this class meeting, so I didn't put a link to a specific file. But you can go to [CM03](https://github.com/qiyangqd/STAT545-participation/tree/master/CM03) directly for more information.
 
 4. CM04: Meeting 4 The version control workflow
-+ nothing is required for submisison.
+    + nothing is required for submisison.
+    
 5. [CM05: Meeting 5 Intro to plotting with ggplot2, PartI](https://qiyangqd.github.io/STAT545-participation/CM05/cm005-exercise.html)
+
 6. [CM06: Meeting 6 Intro to data wrangling, Part I](https://qiyangqd.github.io/STAT545-participation/CM06/cm006-exercise.html)
+
 7. [CM07: Meeting 7 Intro to data wrangling, Part II](https://qiyangqd.github.io/STAT545-participation/CM07/cm007-exercise.html)
 
 8. [CM08: Meeting 8 Intro to plotting with ggplot2, Part II](https://qiyangqd.github.io/STAT545-participation/CM08/cm008-exercise.html)
@@ -31,8 +34,8 @@ Below are the quick links to the **.html** or **.R script** output of each class
 
 12. [CM12: Meeting 12 Working with factors in R](https://qiyangqd.github.io/STAT545-participation/CM12/cm012-exercise.html)
 
-13. [CM13: Meeting 13 Effective Visualizations](https://qiyangqd.github.io/STAT545-participation/CM13/cm013-exercise.html)
+13. [CM13: Meeting 13 Effective Visualizations](https://qiyangqd.github.io/STAT545-participation/CM13/cm013.html)
 
 14. [CM14: Meeting 14 The Model-Fitting Paradigm in R](https://qiyangqd.github.io/STAT545-participation/CM14/cm014-exercise.html)
 
-## Thank you for viewing my participation repo! :satisfied:
+Thank you for viewing my participation repo! :satisfied:
