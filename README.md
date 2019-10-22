@@ -3,7 +3,7 @@
 ## What is this?
 * Hi! My name is **Qi Yang**, a first-year PhD student in Oceanography at University of British Columbia (UBC). I focus on **marine viruses** and their ecological roles in the oceans. I have just started learning **R** and will use this tool in my study.
 
-* This is my participation repository for the course **STAT 545A** at UBC. It is used to store the files I worked on during class meetings. We had 14 class meetings, and files for each class are put in corresponding folders. For instance, files made in **Class Meeting 01** are put in **CM01**. The content can be found below.
+* This is my participation repository for the course **STAT 545A** at UBC. It is used to store the files I worked on during class meetings. We had 14 class meetings, and files for each class are put in corresponding folders. For instance, files made in **Class Meeting 01** are put in **CM01**.
 
 ## Content
 Below are the quick links to the **.html** or **.R script** output of each class meeting mainly. If you want to know more about my participation, please open the folder you are interested in to find some other files like **.rmd** or **.pdf**.
@@ -39,6 +39,6 @@ Below are the quick links to the **.html** or **.R script** output of each class
 14. [CM14: Meeting 14 The Model-Fitting Paradigm in R](https://qiyangqd.github.io/STAT545-participation/CM14/cm014-exercise.html)
 
 15. images
-    + Storage of figures for README in Homework. This can be ignored.
+    + Storage of figures for the README in my Homework Repository. This can be ignored.
     
 * Thank you for viewing my participation repo! :satisfied:
