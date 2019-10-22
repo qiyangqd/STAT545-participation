@@ -27,7 +27,7 @@ This worksheet contains exercises aimed for practice with `dplyr`.
 gapminder %>% 
   group_by(continent, year) %>% 
   summarize(min_life = min(lifeExp),
-            country = country[lifeExp == min_life]) %>% 
+            country = country[lifeExp == min_life]) %>% # keep these columns only
   arrange(min_life)
 ```
 
@@ -36,7 +36,7 @@ gapminder %>%
 gapminder %>% 
   group_by(country) %>% 
   arrange(year) %>% 
-  mutate(rel_growth = pop - first(pop)) %>%
+  mutate(rel_growth = pop - first(pop)) %>% # first value of pop
   DT::datatable(gapminder)
 ```
 
@@ -55,9 +55,10 @@ gapminder %>%
   select(country, continent) %>% 
   DT::datatable(gapminder)
 ```
+
+Testing another dataset in class (can hardly remember why I added this line in class)
 ```{r}
 tb_iris <- as_tibble(iris)
 print(tb_iris)
 ```
-
 

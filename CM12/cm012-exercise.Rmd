@@ -80,9 +80,9 @@ In Activity 1, we created our own factors, so now let's explore what categorical
 
 Use functions such as `str()`, `levels()`, `nlevels()` and `class()` to answer the following questions:
 
-- what class is  `continent`(a factor or character)? factor (class())
-- How many levels? What are they? 5(nlevels()), "Africa"   "Americas" "Asia"     "Europe"   "Oceania" (levels())
-- What integer is used to represent factor "Asia"? 3 (str())
+- what class is  `continent`(a factor or character)? factor (`class()`)
+- How many levels? What are they? 5(`nlevels()`), "Africa"   "Americas" "Asia"     "Europe"   "Oceania" (`levels()`)
+- What integer is used to represent factor "Asia"? 3 (`str()`)
 
 ```{r}
 class(gapminder$continent) 
@@ -129,7 +129,7 @@ h_gap_dropped$country %>%
 
 ## Changing the order of levels
 
-Let's say we wanted to re-order the levels of a factor using a new metric - say, count().
+Let's say we wanted to re-order the levels of a factor using a new metric - say, `count()`.
 
 We should first produce a frequency table as a tibble using `dplyr::count()`:
 

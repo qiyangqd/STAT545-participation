@@ -35,7 +35,7 @@ After fixing the error, fix the overlapping problem in the following plot (attri
 ```{r, fig.width = 5, fig.height = 2}
 ggplot(mpg, aes(cty, hwy)) + 
   geom_jitter(size = 1, alpha = 0.5) + # make dots not on a straight line
-  geom_smooth(method = "lm") + 
+  geom_smooth(method = "lm") + # make grey area smaller
   theme_bw()
 ```
 
@@ -92,7 +92,7 @@ Instead of alpha transparency, suppose you're wanting to fix the overplotting is
 
 ```{r, fig.width = 5, fig.height = 2}
 ggplot(gapminder) +
-  geom_point(aes(gdpPercap, lifeExp, size = 0.1)) +
+  geom_point(aes(gdpPercap, lifeExp)) +
   scale_x_log10(labels = scales::dollar_format())
 ```
 
@@ -115,7 +115,8 @@ tribble(
   4, 0.4, 0.5
 ) %>% 
   ggplot(aes(x, y)) + 
-  geom_line()
+  geom_path(arrow = arrow())+# Figured out in previous session
+  geom_text(aes(label = time))
 ```
 
 ## Exercise 5: Life expectancies in Africa
@@ -128,8 +129,9 @@ Fix the plot so that you can actually see the data points. Be sure to solve the 
 gapminder %>% 
   filter(continent == "Americas") %>% 
   ggplot(aes(country, lifeExp)) + 
-  geom_point() +
-  geom_boxplot()
+  geom_jitter() +
+  geom_boxplot() +
+  coord_flip() # change y- and x- axis
 ```
 
 ### 5(b) Ridgeplots
@@ -139,9 +141,8 @@ We're starting with the same plot as above, but instead of the points + boxplot,
 ```{r, fig.width = 5, fig.height = 2}
 gapminder %>% 
   filter(continent == "Americas") %>% 
-  ggplot(aes(country, lifeExp)) + 
-  geom_point() +
-  geom_boxplot()
+  ggplot(aes(lifeExp, country)) + 
+  ggridges::geom_density_ridges(bandwidth=3)
 ```
 
 ## Exercise 6: Bar plot madness
@@ -156,8 +157,9 @@ gapminder %>%
 ```{r, fig.width = 5, fig.height = 2}
 mtcars %>% 
   mutate(transmission = if_else(am == 0, "automatic", "manual")) %>% 
-  ggplot(aes(cyl)) +
-  geom_bar(aes(colour = transmission))
+  ggplot(aes(cyl,..prop..)) +
+  geom_bar(aes(fill = transmission), position = "dodge") +  # color changes the color of border
+  labs(fill = "Transmission")
 ```
 
 ### 6(b) Bar heights already calculated
@@ -173,7 +175,7 @@ Fix the following bar plot so that it shows these counts.
 
 ```{r}
 ggplot(hair, aes(Hair, n)) +
-  geom_bar()
+  geom_col()
 ```
 
 ## Exercise 7: Tiling
@@ -189,7 +191,7 @@ Fix the following plot so that it shows a filled-in square for each combination.
 
 ```{r}
 ggplot(hair_eye, aes(Hair, Eye)) +
-  geom_point(aes(colour = n))
+  geom_tile(aes(fill = n)) # fill changes inside while color only changes border
 ```
 
 By the way, `geom_count()` is like `geom_bar()`: it counts the number of overlapping points.

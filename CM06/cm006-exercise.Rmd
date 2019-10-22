@@ -37,7 +37,7 @@ library(tidyverse)
 1. Make a data frame containing the columns `year`, `lifeExp`, `country` from the gapminder data, in that order.
 
 ```{r}
-select(gapminder, year, lifeExp, country)
+select(gapminder, year, lifeExp, country) # select: columns
 ```
 
 
@@ -48,7 +48,7 @@ select(gapminder, year, lifeExp, country)
 select(gapminder, country, continent, year, lifeExp)
 
 # Better way:
-select(gapminder, country:lifeExp)
+select(gapminder, country:lifeExp) # no need to type all words
 ```
 
 
@@ -81,7 +81,7 @@ rename(gapminder, cont = continent)
 1. Order by year.
 
 ```{r}
-arrange(gapminder, year)
+arrange(gapminder, year) # change the order of rows by a variable in a column
 ```
 
 2. Order by year, in descending order.
@@ -115,12 +115,12 @@ Now using with pipes:
 
 ```{r}
 # alter the below to include 2 "pipes"
-# we are not storing the change of order in gapminder
+# we are not storing the change of order in gapminder: gapminder doesn't change actually, only output changes
 gapminder %>% 
   select(year, lifeExp, country) %>%
   arrange(year, lifeExp)
 
-arrange(select(gapminder, year, lifeExp, country), year, lifeExp)
+# arrange(select(gapminder, year, lifeExp, country), year, lifeExp) is inconvenient to read
 ```
 
 # Resume lecture 
@@ -133,7 +133,7 @@ Return to guide at section 6.7.
 
 ```{r}
 gapminder %>%
-  filter(pop > 100000000)
+  filter(pop > 100000000) # filter out rows
 ```
 
 2. Your turn: of those rows filtered from step 1., only take data from Asia.
@@ -195,7 +195,7 @@ Your turn: Make a new column called `cc` that pastes the country name followed b
 
 ```{r}
 gapminder %>% 
-  mutate(cc = paste(country, continent, sep = ", "))
+  mutate(cc = paste(country, continent, sep = ", ")) # Asked TA about this
 
 ```
 

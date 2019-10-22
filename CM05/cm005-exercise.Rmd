@@ -66,6 +66,7 @@ Execute this code to store the data in `mauna`:
 (mauna <- tsibble::as_tsibble(co2) %>% 
    rename(month = index, conc = value))
 ```
+* Seems like the month column contains Chinese characters...I tried to remove them and didn't succeed. I guess it depends on one's computer settings.
 
 ### 2(a)
 
@@ -119,8 +120,8 @@ What's wrong with the following code? Fix it.
 ```{r, fig.width = 5, fig.height = 2}
 ggplot(gapminder) +
   geom_point(aes(x= gdpPercap, y = lifeExp), alpha = 0.1) +
-  scale_x_log10("GDP per capita", labels = scales::dollar_format()) + 
-  labs(y = "Life expectancy")
+  scale_x_log10("GDP per capita", labels = scales::dollar_format()) +  # The dollar format is very useful
+  labs(y = "Life expectancy") # Labs can be added separately or together
 ```
 
 
@@ -155,8 +156,9 @@ ggplot(mpg, aes(cty, hwy)) +
 Fix this plot so that it shows life expectancy over time _for each country_.
 
 ```{r, fig.width = 5, fig.height = 2}
-ggplot(gapminder, aes(year, lifeExp)) +
-    geom_line()
+ggplot(gapminder, aes(year, lifeExp, color = country)) +
+    geom_line()+
+    theme(legend.position="none")
 ```
 
 
@@ -175,7 +177,7 @@ motion <- tribble(
   4, 0.4, 0.5
 )
 ggplot(motion, aes(x, y)) + 
-  geom_line()
+  geom_path(arrow = arrow())
 ```
 
 ### 3(d)
@@ -184,7 +186,7 @@ The following plot attempts to put both the raw data and boxplots together, but 
 
 ```{r, fig.width = 5, fig.height = 2}
 ggplot(gapminder, aes(continent, lifeExp)) +
-  geom_point() +
+  geom_jitter() +
   geom_boxplot()
 ```
 
